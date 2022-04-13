@@ -1,8 +1,12 @@
 {
-    "name": "Editor",
+    "name": "UtilitiesCustomPackage.Editor.CustomWindows",
     "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [],
+    "references": [
+        "GUID:ebe80b196d359434890baf4512d14a48"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
