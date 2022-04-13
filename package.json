@@ -1,6 +1,6 @@
 {
   "name": "com.tgl.customeditors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "TGL - Custom Editors",
   "description": "The Best Custom Editors",
   "unity": "2020.3",
@@ -8,8 +8,7 @@
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": {
     "name": "TGL",
     "email": "",
