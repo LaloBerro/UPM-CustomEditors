@@ -9,7 +9,7 @@ public class AssemblyReloadEditor : EditorWindow
         GetWindow<AssemblyReloadEditor>();
     }
 
-    void OnGUI()
+    private void OnGUI()
     {
         if (GUILayout.Button(EditorGUIUtility.IconContent("IN LockButton on act@2x")))
         {
