@@ -15,8 +15,5 @@
     "url": ""
   },
   "type": "tool",
-  "hideInEditor": false,
-  "dependencies": {
-    "com.marijnzwemmer.unity-toolbar-extender": "https://github.com/marijnz/unity-toolbar-extender.git"
-  }
+  "hideInEditor": false
 }
