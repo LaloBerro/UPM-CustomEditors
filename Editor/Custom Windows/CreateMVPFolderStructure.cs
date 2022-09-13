@@ -24,6 +24,24 @@ namespace UtilitiesCustomPackage.EditorExtensions
             CreateDirectory("Installers", directoryPath);
         }
 
+        [MenuItem("Assets/Create CC Folders")]
+        public static void CreateCC()
+        {
+            string directoryPath = AssetDatabase.GetAssetPath(Selection.activeObject);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                directoryPath = Path.GetDirectoryName(directoryPath);
+            }
+
+            Debug.Log(directoryPath);
+
+            CreateDirectory("Domain", directoryPath);
+            CreateDirectory("View", directoryPath);
+            CreateDirectory("InterfaceAdapters", directoryPath);
+            CreateDirectory("Installers", directoryPath);
+        }
+
         private static void CreateDirectory(string folderName, string existingPath)
         {
             string folderPath = Path.Combine(existingPath, folderName);
