@@ -47,9 +47,7 @@ public class SelectionHistoryWindowToolbar
     {
         GUILayout.FlexibleSpace();
 
-        if (GUILayout.Button(
-                        new GUIContent(EditorGUIUtility.IconContent("ArrowNavigationLeft").image,
-                            "Select previous (Left bracket key)"), EditorStyles.toolbarButton))
+        if (GUILayout.Button(new GUIContent(EditorGUIUtility.IconContent("ArrowNavigationLeft").image, "Select previous (Left bracket key)"), EditorStyles.toolbarButton))
         {
 
             SelectPrevious();

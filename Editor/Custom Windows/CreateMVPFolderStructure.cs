@@ -37,9 +37,19 @@ namespace UtilitiesCustomPackage.EditorExtensions
             Debug.Log(directoryPath);
 
             CreateDirectory("Domain", directoryPath);
-            CreateDirectory("View", directoryPath);
+            CreateDirectory("UseCases", Path.Combine(directoryPath, "Domain"));
+            CreateDirectory("Entities", Path.Combine(directoryPath, "Domain"));
+
             CreateDirectory("InterfaceAdapters", directoryPath);
+            CreateDirectory("Gateways", Path.Combine(directoryPath, "InterfaceAdapters"));
+            CreateDirectory("Presenters", Path.Combine(directoryPath, "InterfaceAdapters"));
+            CreateDirectory("Controllers", Path.Combine(directoryPath, "InterfaceAdapters"));
+
             CreateDirectory("Installers", directoryPath);
+            CreateDirectory("Domain", Path.Combine(directoryPath, "Installers"));
+            CreateDirectory("InterfaceAdapters", Path.Combine(directoryPath, "Installers"));
+
+            CreateDirectory("View", directoryPath);
         }
 
         private static void CreateDirectory(string folderName, string existingPath)
