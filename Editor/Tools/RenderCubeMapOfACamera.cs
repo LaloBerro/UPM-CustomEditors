@@ -12,7 +12,7 @@ namespace CustomEditors
         private int size = 512;
         public string newCubmapPath = "cubemap";
 
-        [MenuItem("Custom Editor/RenderCubeMapOfACamera")]
+        [MenuItem("Tools/RenderCubeMapOfACamera")]
         private static void ShowWindow()
         {
             var window = GetWindow<RenderCubeMapOfACamera>();

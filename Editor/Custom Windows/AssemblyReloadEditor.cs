@@ -5,7 +5,7 @@ namespace UtilitiesCustomPackage.EditorExtensions
 {
     public class AssemblyReloadEditor : EditorWindow
     {
-        [MenuItem("Custom Editor/Assembly Reload Editor")]
+        [MenuItem("Tools/Assembly Reload Editor")]
         public static void Init()
         {
             GetWindow<AssemblyReloadEditor>();

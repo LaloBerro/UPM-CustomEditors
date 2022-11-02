@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace BaseProject.EditorExtensions.Windows
 {
@@ -7,7 +7,7 @@ namespace BaseProject.EditorExtensions.Windows
     {
         private bool _showBtn = true;
 
-        [MenuItem("Custom Editor/Remove Collider")]
+        [MenuItem("Tools/Remove Collider")]
         public static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(RemoveCollidersOfASelectedGameobjectWindow), false, "Remove Collider");
@@ -69,7 +69,7 @@ namespace BaseProject.EditorExtensions.Windows
         }
 
         private void RemoveCollider(GameObject obj)
-        {           
+        {
             if (obj.GetComponent<Collider>())
             {
                 foreach (Collider col in obj.GetComponents<Collider>())

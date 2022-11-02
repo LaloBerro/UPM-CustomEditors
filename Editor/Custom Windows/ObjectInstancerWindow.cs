@@ -23,7 +23,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         #endregion
 
-        [MenuItem("Custom Editor/Gameobject Instancer")]
+        [MenuItem("Tools/Gameobject Instancer")]
         private static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(ObjectInstancerWindow), false, "Gameobject Instancer");

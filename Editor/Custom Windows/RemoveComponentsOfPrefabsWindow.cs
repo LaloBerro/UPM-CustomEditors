@@ -9,7 +9,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
     {
         private MonoScript _targetComponent;
 
-        [MenuItem("Custom Editor/Remove Component on prefabs and apply")]
+        [MenuItem("Tools/Remove Component on prefabs and apply")]
         public static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(RemoveComponentsOfPrefabsWindow), false, "Remove Component on prefabs");

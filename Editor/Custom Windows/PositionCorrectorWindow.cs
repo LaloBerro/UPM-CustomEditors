@@ -12,7 +12,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         private bool _affectRotation;
 
-        [MenuItem("Custom Editor/Position Corrector")]
+        [MenuItem("Tools/Position Corrector")]
         private static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(PositionCorrectorWindow), false, "Position Corrector");

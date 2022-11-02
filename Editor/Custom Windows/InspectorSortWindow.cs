@@ -35,7 +35,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         #endregion
 
-        [MenuItem("Custom Editor/Sort Inspector")]
+        [MenuItem("Tools/Sort Inspector")]
         private static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(InspectorSortWindow), false, "Sort Inspector");

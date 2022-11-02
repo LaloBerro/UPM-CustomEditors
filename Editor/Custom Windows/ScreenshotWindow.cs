@@ -17,7 +17,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         private bool isTakeHiResShot = false;
 
-        [MenuItem("Custom Editor/Screenshot")]
+        [MenuItem("Tools/Screenshot")]
         private static void ShowWindow()
         {
             EditorWindow editorWindow = EditorWindow.GetWindow(typeof(ScreenshotWindow));

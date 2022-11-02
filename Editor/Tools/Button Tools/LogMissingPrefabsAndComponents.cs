@@ -9,7 +9,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.CustomTools.Button
     {
         private static List<string> _results = new List<string>();
 
-        [MenuItem("Custom Editor/Log Missing Prefabs And Components")]
+        [MenuItem("Tools/Log Missing Prefabs And Components")]
         private static void Search()
         {
             _results.Clear();

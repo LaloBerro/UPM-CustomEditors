@@ -9,7 +9,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.CustomTools
     {
         private static AddRequest Request;
 
-        [MenuItem("Custom Editor/Update Utilities package", priority = 0)]
+        [MenuItem("Tools/Update Utilities package", priority = 0)]
         public static void Add()
         {
             Debug.Log("Updating Utilities package");

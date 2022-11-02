@@ -18,7 +18,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
         private MonoScript _lastChecked;
         private Vector2 _scroll;
 
-        [MenuItem("Custom Editor/Search For Components")]
+        [MenuItem("Tools/Search For Components")]
         private static void ShowWindow()
         {
             SearchForComponentsWindow window = (SearchForComponentsWindow)EditorWindow.GetWindow(typeof(SearchForComponentsWindow));

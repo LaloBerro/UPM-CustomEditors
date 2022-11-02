@@ -11,7 +11,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         private string _sceneToSearch = "";
 
-        [MenuItem("Custom Editor/Scene Selector List")]
+        [MenuItem("Tools/Scene Selector List")]
         private static void ShowWindow()
         {
             EditorWindow.GetWindow(typeof(SceneSelectorListWindow), false, "Scene Selector");

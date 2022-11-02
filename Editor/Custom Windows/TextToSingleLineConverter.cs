@@ -9,7 +9,7 @@ namespace UtilitiesCustomPackage.EditorExtensions
         private string _textToConvert;
         private string _textOutput;
 
-        [MenuItem("Custom Editor/TextToSingleLineConverter")]
+        [MenuItem("Tools/TextToSingleLineConverter")]
         private static void ShowWindow()
         {
             var window = GetWindow<TextToSingleLineConverter>();
