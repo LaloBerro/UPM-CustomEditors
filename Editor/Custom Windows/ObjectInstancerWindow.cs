@@ -10,7 +10,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         private bool useOnEditMode;
 
-        private GameObject[] _objectsToInstance;
+        public GameObject[] _objectsToInstance;
 
         private bool _useRandomRotation;
         private bool _useGroundRotation;
@@ -31,7 +31,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
         void OnGUI()
         {
-            useOnEditMode = EditorGUILayout.Toggle("Activar modo de edicion", useOnEditMode);
+            useOnEditMode = EditorGUILayout.Toggle("Edit Mode", useOnEditMode);
 
             if (useOnEditMode)
                 DrawWindow();
@@ -45,7 +45,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
                 {
                     ScriptableObject scriptableObj = this;
                     SerializedObject serialObj = new SerializedObject(scriptableObj);
-                    SerializedProperty serialProp = serialObj.FindProperty("objectsToInstance");
+                    SerializedProperty serialProp = serialObj.FindProperty("_objectsToInstance");
 
                     EditorGUILayout.PropertyField(serialProp, true);
                     serialObj.ApplyModifiedProperties();
