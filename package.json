@@ -1,5 +1,5 @@
 {
-  "name": "com.tgl.customeditors",
+  "name": "com.lalo.customeditors",
   "version": "2.0.1",
   "displayName": "TGL - Custom Editors",
   "description": "The Best Custom Editors",
@@ -10,7 +10,7 @@
   "licensesUrl": "",
   "keywords": [],
   "author": {
-    "name": "TGL",
+    "name": "lalo",
     "email": "",
     "url": ""
   },
