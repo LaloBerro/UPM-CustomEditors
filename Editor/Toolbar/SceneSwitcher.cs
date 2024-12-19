@@ -47,7 +47,7 @@ namespace CustomEditors
         }
     }
 
-    static class SceneHelper
+    public static class SceneHelper
     {
         static string sceneToOpen;
 
