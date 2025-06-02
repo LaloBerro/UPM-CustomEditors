@@ -142,7 +142,7 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
                 {
                     canvas.renderMode = RenderMode.ScreenSpaceCamera;
                     canvas.worldCamera = _camera;
-                    canvas.sortingOrder = 10000;
+                    canvas.sortingOrder += 10000;
                 }
             }
 
