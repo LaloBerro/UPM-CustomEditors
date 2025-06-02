@@ -135,13 +135,20 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
                 throw new InvalidOperationException("Camera is null. Please assign a camera.");
 
             Canvas[] canvases = FindObjectsByType<Canvas>(FindObjectsInactive.Exclude, FindObjectsSortMode.InstanceID);
-
+            int[] sortingOrder = new int[canvases.Length];
+            
             if (_hasToIncludeCanvas)
             {
-                foreach (Canvas canvas in canvases)
+                for (var index = 0; index < canvases.Length; index++)
                 {
+                    var canvas = canvases[index];
+                    if (canvas.renderMode == RenderMode.WorldSpace)
+                        continue;
+
                     canvas.renderMode = RenderMode.ScreenSpaceCamera;
                     canvas.worldCamera = _camera;
+                    
+                    sortingOrder[index] = canvas.sortingOrder;
                     canvas.sortingOrder += 10000;
                 }
             }
@@ -171,8 +178,15 @@ namespace UtilitiesCustomPackage.EditorExtensions.Windows
 
             if (_hasToIncludeCanvas)
             {
-                foreach (Canvas canvas in canvases)
+                for (var index = 0; index < canvases.Length; index++)
+                {
+                    var canvas = canvases[index];
+                    if (canvas.renderMode == RenderMode.WorldSpace)
+                        continue;
+                    
+                    canvas.sortingOrder = sortingOrder[index];
                     canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+                }
             }
 
             _mustTakeHighResShot = false;
