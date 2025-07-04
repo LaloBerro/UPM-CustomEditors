@@ -169,10 +169,12 @@ namespace CustomEditors
                 return sceneName;
             }
 
-            EditorSceneManager.OpenScene(scenePath);
-
             EditorApplication.playModeStateChanged -= ExitOnPlay;
-
+            if (string.IsNullOrEmpty(scenePath))
+                return;
+            
+            EditorSceneManager.OpenScene(scenePath);
+            
             PlayerPrefs.SetString("OpenScene", "");
 
             PlayerPrefs.SetInt("MagicPlayButtonIsPressed", 0);
